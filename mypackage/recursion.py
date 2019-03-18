@@ -35,10 +35,16 @@ def fibonacci(n):
      -------
      nth term in fibonacci sequence
     '''
-    if n <= 1:
+    if n<0:
+        print("Incorrect input")
+    # First Fibonacci number is 0
+    elif n==1:
+        return 0
+    # Second Fibonacci number is 1
+    elif n==2:
         return 1
-    return fibonacci(n - 2) + fibonacci(n - 1)
-
+    else:
+        return Fibonacci(n-1)+Fibonacci(n-2)
 
 
 def factorial(n):
