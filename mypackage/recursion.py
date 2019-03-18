@@ -50,7 +50,8 @@ def fibonacci(n):
             f0 = f1
             f1 = fib
             counter += 1
-            return fib
+    return fib
+
 
 
 def factorial(n):
