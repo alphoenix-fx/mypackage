@@ -35,16 +35,22 @@ def fibonacci(n):
      -------
      nth term in fibonacci sequence
     '''
-    if n<0:
-        print("Incorrect input")
-    # First Fibonacci number is 0
-    elif n==1:
-        return 0
-    # Second Fibonacci number is 1
-    elif n==2:
-        return 1
-    else:
-        return fibonacci(n-1)+fibonacci(n-2)
+      n = abs( int( n ))
+      if n == 0:
+          fib = 0
+      elif n == 1:
+          fib = 1
+      else:
+          counter = 2
+          f0 = 0
+          f1 = 1
+          fib = f0 + f1
+          while counter <= n:
+              fib = f0 + f1
+              f0 = f1
+              f1 = fib
+              counter += 1
+      return fib
 
 
 def factorial(n):
