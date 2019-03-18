@@ -8,7 +8,7 @@ setup(
     description='EDSA example python package',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
-    url='https://github.com/alphoenix_the_wiz/mypackage',
+    url='https://github.com/alphoenixbiz/mypackage.git',
     author='Alfred Maboa',
     author_email='alfimaboa@gmail.com'
 )
